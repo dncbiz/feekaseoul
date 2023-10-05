@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>dnc_소스</title>
+<meta name="apple-mobile-web-app-title" content="dnc_소스">
+<meta name="generator" content="In5 v3.8.13">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1920,minimum-scale=.2">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/vmouse.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.anythingslider.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/in5.config.js"></script>
+<link rel="stylesheet" href="assets/css/in5.slider.css" media="all">
+<link rel="stylesheet" href="assets/css/pages.css" media="all">
+<style media="all and (-ms-high-contrast:none)">*::-ms-backdrop,.svg-img{width:100%;}</style>
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<div id="loadIndicator"><img src="assets/images/loading.gif" alt="loading..."/><span>&nbsp;</span></div>
+<div id="container-wrap">
+<div id="container">
+<ul class="pages" id="slider">
+  <li class="page" data-name="1">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1920px;height:800px;" data-page-ids="240,247">
+      <img src="assets/images/blank.gif" alt="Rectangle" class="pageItem hd" id="item266" data-src="assets/images/item_266.jpg"/>
+    </div>
+  </li>
+  <li class="page" data-name="2">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1920px;height:800px;" data-page-ids="1100,247">
+      <img src="assets/images/blank.gif" alt="Rectangle" class="pageItem hd" id="item1648" data-src="assets/images/item_1648.jpg"/>
+    </div>
+  </li>
+  <li class="page" data-name="3">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1920px;height:800px;" data-page-ids="1270,247">
+      <img src="assets/images/blank.gif" alt="Rectangle" class="pageItem hd" id="item1660" data-src="assets/images/item_1660.jpg"/>
+    </div>
+  </li>
+  <li class="page" data-name="4">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1920px;height:800px;" data-page-ids="1687,247">
+      <img src="assets/images/blank.gif" alt="Rectangle" class="pageItem hd" id="item1692" data-src="assets/images/item_1692.jpg"/>
+    </div>
+  </li>
+  <li class="page" data-name="5">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1920px;height:800px;" data-page-ids="1811,247">
+      <img src="assets/images/blank.gif" alt="Rectangle" class="pageItem hd" id="item1812" data-src="assets/images/item_1812.jpg"/>
+    </div>
+  </li>
+</ul>
+<div id="prefooter" style="float:left;height:1px;">&nbsp;</div>
+</div>
+<footer id="in5footer"><a href="http://ajarproductions.com/pages/products/in5/?ref=footer" target="_blank" >Built with in5</a>.</footer>
+</div>
+<nav class="fixed-item-wrap">
+  <div alt="Group" data-fixed-for="layout" id="item1476" class="pageItem group fixed-pos-elem fixed-scaling-desktop mq-none mq-default ">
+    <div id="item1475" alt="Rectangle" class="pageItem ">&nbsp;</div>
+    <button data-id="1439" name="단추 1" onclick="nav.next(this);" aria-label="단추 1" id="item1439" class="pageItem has-on ">
+      <div class="pageItem state btn-off">
+        <div alt="Oval" id="item555" class="pageItem ">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="41" height="41" style="">
+            <circle cx="19.75" cy="19.75" r="19.75" stroke="#fff" stroke-width="0.5" fill="transparent"/>
+          </svg>
+        </div>
+        <img src="assets/images/item_557.png" alt="Polygon" class="pageItem hd" style="left:17px !important;top:16px !important;" id="item557"/>
+      </div>
+      <div class="pageItem state btn-on">
+        <div alt="Oval" id="item1911" class="pageItem ">
+          <svg version="1.1" width="41" height="41" style="">
+            <circle cx="19.75" cy="19.75" r="19.75" stroke="#fff" stroke-width="0.5" fill="transparent"/>
+          </svg>
+        </div>
+        <img src="assets/images/item_1912.png" alt="Polygon" class="pageItem hd" style="left:17px !important;top:16px !important;" id="item1912"/>
+      </div>
+    </button>
+  </div>
+  <div alt="Group" data-fixed-for="layout" id="item1478" class="pageItem group fixed-pos-elem fixed-scaling-desktop mq-none mq-default ">
+    <div id="item1477" alt="Rectangle" class="pageItem ">&nbsp;</div>
+    <button data-id="1441" name="단추 2" onclick="nav.back(this);" aria-label="단추 2" id="item1441" class="pageItem has-on ">
+      <div class="pageItem state btn-off">
+        <div alt="Oval" id="item561" class="pageItem ">
+          <svg version="1.1" width="41" height="41" style="">
+            <circle cx="19.75" cy="19.75" r="19.75" stroke="#fff" stroke-width="0.5" fill="transparent"/>
+          </svg>
+        </div>
+        <img src="assets/images/item_562.png" alt="Polygon" class="pageItem hd" style="left:17px !important;top:16px !important;" id="item562"/>
+      </div>
+      <div class="pageItem state btn-on">
+        <div alt="Oval" id="item1908" class="pageItem ">
+          <svg version="1.1" width="41" height="41" style="">
+            <circle cx="19.75" cy="19.75" r="19.75" stroke="#fff" stroke-width="0.5" fill="transparent"/>
+          </svg>
+        </div>
+        <img src="assets/images/item_1909.png" alt="Polygon" class="pageItem hd" style="left:17px !important;top:16px !important;" id="item1909"/>
+      </div>
+    </button>
+  </div>
+</nav>
+</body>
+</html>

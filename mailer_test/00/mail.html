@@ -1,0 +1,27 @@
+<?php include 'mail.php'?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+<style>
+    .alert-success{background: blue}
+    .alert-error{background: red}
+</style>
+<body>
+    <div class="container">
+    <h1>CONTRACT FORM</h1>
+    <form method="POST" id="contact-form">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone" required>
+        <input type="text" name="subject" placeholder="subject" required>
+        <textarea name="message" row="4" placeholder="How can we help you"></textarea>
+        <div class=""><?php echo $alert; ?></div>
+        <button type="submit" name="submit">send</button>
+        </form>    
+    </div>
+    </body>    
+</html>

@@ -1,0 +1,153 @@
+/* Welcome here, 
+ * you can say hello 
+ * or see other projects like this 
+ * at quentinrenaux.com/category/oneexperimentperday
+ * and we can speak at    
+ * twitter : @quentinrenaux 
+ * insta : @quentinrenaux
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/* BASIC CODE  
+ * ------------------ */
+*, div, p, img {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* BODY CODE  
+ * ------------------ */
+body {
+font-family: 'Alata', sans-serif;
+font-size: 14px;
+background: #ddd;
+  
+  display: flex; /* flex is for center verticaly and horizontaly the number */
+    align-items: center;
+    justify-content: center;
+  min-height:100vh;
+}
+
+a {color:#111; text-decoration:none;}
+a:hover {color:#000}
+
+p {margin-top:2px;}
+
+header {
+  padding:20px; 
+  margin:10px;
+  position:relative;  
+  box-shadow: 0px 1px 54px -8px rgba(0,0,0,0.39);
+  border-radius: 6px;
+  font-size:0.8em;   
+    -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+header:hover {
+  box-shadow: 0px 1px 54px -8px rgba(0,0,0,0.59);
+  background:#e1e1e1;
+}
+
+/* container video */
+container {
+  padding:0;
+  margin:10px;
+  position: relative;
+  border: 2px solid black; 
+  border-radius: 6px; 
+  display: block; 
+  overflow: hidden; 
+  
+  background: url(https://steamuserimages-a.akamaihd.net/ugc/400086242642081746/F4586E52EC8F72B1C6B3506480D5D992C7D9D61B/) center center;
+  background-size: 100%;
+  }
+
+video {
+  max-width:310px; 
+  display: block;
+  position: relative;
+  border: 0; 
+  padding: 0; 
+}
+
+@media (max-width: 700px) {
+ body {
+   flex-direction: column;
+   min-height:100vh; /* for mobile sur codepen */
+   padding-bottom:70px;/* for mobile sur codepen */
+ }  
+ header {
+   max-width:310px;
+ }            
+}	
+
+
+/* checkbox hide */
+#volume-switcher {
+  display: none; 
+}
+
+/* volume on : container */
+#switcher-container {
+  display:block;
+  position: absolute;
+  top:0; left:0; bottom:0; right:0;  
+  cursor: pointer;
+  opacity: 0.8;
+  filter: invert(1); /* changer couleur icon */
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* volume on : button */ 
+#switcher-container:after {
+  content: "";
+  border: 0px solid black;
+  background: url(https://res.cloudinary.com/quentindigital/image/upload/v1598656567/icons/sound-off_rhwz0o.svg) center center;
+  background-size: 100%;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+#switcher-container:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in 0s;}
+
+/* volume off : container */
+#volume-switcher:checked + #switcher-container {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0.1;
+  -webkit-transition: all 0.7s ease-in 1s;
+  -moz-transition: all 0.7s ease-in 1s;
+  transition: all 0.7s ease-out 1s;   
+}
+
+/* volume off : hover */
+#volume-switcher:checked + 
+#switcher-container:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: opacity 0.3s ease-out 0s;}
+
+/* volume off : button */
+#volume-switcher:checked + #switcher-container:after {
+  right: 10px;
+  content: "";
+  background: url(https://res.cloudinary.com/quentindigital/image/upload/v1598656567/icons/sound-on_vztd3h.svg) center center;
+  background-size: 100%;
+}

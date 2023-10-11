@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 📺  My perfect Video Autoplay Responsive (muted) with volume on/off</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a href="https://quentinrenaux.com/category/oneexperimentperday" target="_blank"><header><h1>This is <u>an autoplay video</u> <br>
+  <u>muted</u> to work on mobile <br>
+  with a <u>volume on/off button</u> <br>
+& nothing eles <br> </h1>
+<h2>like a story instagram</h2>
+  <p>/<u>Check the articles.</u></p></header></a>
+
+
+<!-- container video -->
+<container>
+
+<!-- video -->
+<video autoplay="autoplay" loop="" muted="muted" webkit-playsinline="" playsinline="" class="video" id="theplayer" type="video/mp4" width="100%" height="auto" style="display:block; margin:0 ; padding: 0;"><source src="https://res.cloudinary.com/quentindigital/video/upload/v1598625047/day20-challenge-quentinrenaux_ylqkl7.mp4" type="video/mp4">
+</video>
+  
+ <!-- volume on/off -->
+<input type="checkbox" id="volume-switcher">
+<label id="switcher-container" for="volume-switcher"></label> 
+  
+</container>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

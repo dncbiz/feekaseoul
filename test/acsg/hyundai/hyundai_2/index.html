@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="quasidance">
+<head>
+    <meta charset="utf-8" />
+    <title>수소/전기차 올 케어 서비스</title>
+    <meta name="viewport" content="width=device-width">
+<!--
+모바일 브라우저
+ - Safari 15~
+ - 삼성 인터넷 6.2~
+ - 크롬 94~
+-->
+<meta name="theme-color" content="#ffffff">
+
+<!--
+iOS Safari 
+-->
+<meta name="apple-mobile-web-app-capable" content="yes">    
+<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">    
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="asset/style.css" />
+    <link data-n-head="ssr" rel="shortcut icon" href="https://www.hyundai.com/static/images/common/favicon/favicon.ico">
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.22/angular.js" data-semver="1.2.22"></script>
+    <script src="../asset/app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+    <browse-content></browse-content>
+</body>
+</html>

@@ -4,14 +4,14 @@
 }
 
 .speak {
-  margin: 20vh 0;
+  margin: 35vh 0;
 }
 .speak:first-child {
-  margin-top: -10vh;
+  margin-top: -100vh;
 }
 
 .speak[data-scroll] {
-  transform: translatey(calc(var(--viewport-y) * 30vh));
+  transform: translatey(calc(var(--viewport-y) * 10vh));
   opacity: calc(var(--visible-y));
 }
 

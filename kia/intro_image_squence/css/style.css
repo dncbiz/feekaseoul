@@ -60,14 +60,13 @@ body {
 }
 
 /* hide scrollbar but allow scrolling */
-body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+:root::-webkit-scrollbar{
+  display: none;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* other styling */

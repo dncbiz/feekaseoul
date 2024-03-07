@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - PHP Contact Form Example (2020)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHP Contact Form 2020</title>
+</head>
+
+<body>
+  
+<form action="email.php" name="contactform">
+  <label for="email">Please enter email</label>
+  <input id="email" type="email" required placeholder="rocks@rockhounder.com">
+  <br><br>
+
+  <select id="dropdown">
+    <option>McDermitt</option>
+    <option>Bruneau Wood Pile</option>
+    <option>Texas Springs</option>
+  </select>
+  <br><br>
+
+  <label for="adults">Please select number of adults</label>
+  <input id="adults" type="number" min="0" max="15" required placeholder="adults">
+  <br><br>
+
+  <label for="minors">Please select number of minors</label>
+  <input id="minors" type="number" min="0" max="15" required placeholder="minors">
+  <br><br>
+
+  <label>Day Trip or Overnight:</label>
+  <input type="checkbox" value="0" id="day-trip">
+  <label for="day-trip">Day Trip</label>
+
+  <input type="checkbox" value="1" id="overnight">
+  <label for="overnight">Overnight</label>
+  <br><br>
+
+  <textarea placeholder="Please enter anything else we should know."></textarea>
+  <br><br>
+
+  <input id="submit" type="submit">
+</form>
+  
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

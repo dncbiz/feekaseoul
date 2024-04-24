@@ -439,7 +439,7 @@ ul.thumbs > li img { box-shadow:0 0 4px rgba(0, 0, 0, 0.5); }
 
 /*CSS Generated from InDesign Styles*/
 
-body, #container-wrap { background:#ededed; }
+body, #container-wrap { background:rgba(0,0,0,0); }
 :-webkit-full-screen { background:#ededed; }
 #loadIndicator span:after { padding-left:1ex; content:'loading content...'; }
 #slider { width:1920px; height:1080px; }
